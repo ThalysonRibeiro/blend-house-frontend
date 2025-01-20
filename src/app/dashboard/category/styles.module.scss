@@ -1,0 +1,24 @@
+.container {
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  max-width: 16px 0;
+}
+
+.input {
+  height: 40px;
+  border: 0;
+  background-color: var(--darck-700);
+  border-radius: 8px;
+  padding: 0 16px;
+  color: var(--white);
+  border: 1px solid var(--gray);
+}
