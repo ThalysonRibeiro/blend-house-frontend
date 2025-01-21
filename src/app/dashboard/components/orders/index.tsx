@@ -2,18 +2,18 @@
 import { RefreshCw } from "lucide-react"
 import styles from "./styles.module.scss"
 import { OrderProps } from "@/lib/order.type"
-import { Modalorder } from "../modal";
-import { use } from "react";
-import { OrderContext } from "@/providers/order";
-import { useRouter } from "next/navigation";
-import { toast } from "sonner";
+import { Modalorder } from "../modal"
+import { useContext } from 'react' // Correto import do useContext
+import { OrderContext } from "@/providers/order"
+import { useRouter } from "next/navigation"
+import { toast } from "sonner"
 
 interface Props {
   orders: OrderProps[];
 }
 
 export function Orders({ orders }: Props) {
-  const { isOpen, onRequestOpem } = use(OrderContext);
+  const { isOpen, onRequestOpem } = useContext(OrderContext); // Usando useContext em vez de use
   const route = useRouter();
 
   async function handleDetailOrde(order_id: string) {
@@ -44,7 +44,9 @@ export function Orders({ orders }: Props) {
           {orders.map((order) => (
             <button
               onClick={() => handleDetailOrde(order.id)}
-              key={order.id} className={styles.orderItem}>
+              key={order.id}
+              className={styles.orderItem}
+            >
               <div className={styles.tag}></div>
               <span>Mesa {order.table}</span>
             </button>
