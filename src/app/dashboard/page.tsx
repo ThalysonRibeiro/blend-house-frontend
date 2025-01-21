@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import { getCookieServer } from "@/lib/cookieServer";
 import { Orders } from "./components/orders";
 import { api } from "@/services/app";
