@@ -38,12 +38,16 @@ export default function Signup() {
   return (
     <>
       <div className={styles.containerCenter}>
-        <Image
+        {/* <Image
           src={logoImg}
           alt="logo do restaurante"
           className={styles.logiImg}
-        />
+        /> */}
         <section className={styles.login}>
+          <div className={styles.logo}>
+            <h1>BLEND HOUSE</h1>
+            <p>Restaurant & Lounge</p>
+          </div>
           <h1>Criando sua conta</h1>
           <form action={handleRegister}>
             <input
@@ -63,7 +67,7 @@ export default function Signup() {
             <input
               type="password"
               name="password"
-              placeholder="********"
+              placeholder="Digite sua enha"
               required
               className={styles.input}
             />

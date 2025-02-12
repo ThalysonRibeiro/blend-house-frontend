@@ -68,12 +68,12 @@ export default function Home() {
   return (
     <>
       <div className={styles.containerCenter}>
-        <Image
-          src={logoImg}
-          alt="logo do restaurante"
-          className={styles.logiImg}
-        />
         <section className={styles.login}>
+          <div className={styles.logo}>
+            <h1>BLEND HOUSE</h1>
+            <p>Restaurant & Lounge</p>
+          </div>
+
           <form action={handleLogin}>
             <input
               type="email"
@@ -85,7 +85,7 @@ export default function Home() {
             <input
               type="password"
               name="password"
-              placeholder="********"
+              placeholder="Digite sua enha"
               required
               className={styles.input}
             />

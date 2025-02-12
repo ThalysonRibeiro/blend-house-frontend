@@ -21,14 +21,9 @@ export function Header() {
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
         <Link href="/dashboard">
-          <Image
-            src={logoImg}
-            alt="logo do restaurante"
-            width={190}
-            height={60}
-            priority={true}
-            quality={100}
-          />
+          <div className={styles.logo}>
+            <h1>BLEND HOUSE</h1>
+          </div>
         </Link>
         <nav>
           <Link href="/dashboard/category">Categoria</Link>

@@ -11,6 +11,18 @@
   align-items: center;
   justify-content: space-between;
 
+  a {
+    text-decoration: none;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    background: linear-gradient(45deg, #FF0000, #8B00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   nav {
     display: flex;
     align-items: center;
